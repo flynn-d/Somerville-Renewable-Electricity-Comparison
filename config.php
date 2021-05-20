@@ -2,16 +2,16 @@
 
 return [
     'production' => false,
-    'baseUrl' => 'https://artisanstatic.netlify.app',
+    'baseUrl' => 'https://somerville-renewable-electricity.netlify.app/',
     'site' => [
-        'title' => 'My Jigsaw Blog',
-        'description' => 'Personal blog of John Doe.',
+        'title' => 'Comparing Renewable Electricity for Somerville, MA',
+        'description' => 'Costs and Benefits of Renewable Electricity from Somerville CCA',
         'image' => 'default-share.png',
     ],
     'owner' => [
-        'name' => 'John Doe',
-        'twitter' => 'johndoe',
-        'github' => 'johndoe',
+        'name' => 'Dan Flynn',
+        #'twitter' => 'johndoe',
+        'github' => 'flynn-d',
     ],
     'services' => [
         'cmsVersion' => '2.10.125',
