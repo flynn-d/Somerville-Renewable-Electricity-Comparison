@@ -12,6 +12,7 @@
             var co2_100 = d.kwhslider * d.co2avoid;
 
             console.log(bill5, bill100, co2_5, co2_100);
+            document.querySelector('#output').textContent = "bill5: " + bill5 + ", bill100: " + bill100 + ", co2_5: " + co2_5 + ", co2_100: " + co2_100;
         };
     }
 

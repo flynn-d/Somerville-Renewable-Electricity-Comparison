@@ -10,35 +10,47 @@
 <body>
     <form>
         <h2>Enter your information</h2>
-        <div class="row">
-            <label for="custcharge">Customer charge</label>
-            <input type="text" name="custcharge" id="custcharge">
-        </div>
-        <div class="row">
-            <label for="co2avoid">CO2 to avoid</label>
-            <input type="text" name="co2avoid" id="co2avoid">
-        </div>
-        <div class="row">
-            <label for="deliverycharges">Delivery charges</label>
-            <input type="text" name="deliverycharges" id="deliverycharges">
-        </div>
+
+        <h3>Your energy consumption</h3>
         <div class="row">
             <label for="kwhslider">KwHs</label>
             <input type="text" name="kwhslider" id="kwhslider">
         </div>
+        
+        <h3>Electricity generation rates</h3>
         <div class="row">
-            <label for="rate5">rate5</label>
-            <input type="text" name="rate5" id="rate5">
+            <label for="rate10">Default +10% renewable</label>
+            <input type="text" name="rate10" value="0.10519" id="rate10">
         </div>
         <div class="row">
-            <label for="rate100">rate100</label>
-            <input type="text" name="rate100" id="rate100">
+            <label for="rate100">Opt up 100% renewable</label>
+            <input type="text" name="rate100" value="0.13219" id="rate100">
         </div>
+
+        <h3>Electricity delivery rates</h3>
+
+        <div class="row">
+            <label for="custcharge">Customer account charge</label>
+            <input type="text" name="custcharge" value="7.00" id="custcharge">
+        </div>
+        <div class="row">
+            <label for="deliverycharges">Delivery charges</label>
+            <input type="text" name="deliverycharges" value="0.12818" id="deliverycharges">
+        </div>
+
+        <h3>CO[2] avoided by choosing renewable energy</h3>
+        <div class="row">
+            <label for="co2avoid">Pounds of CO[2] avoided per kWh of renewable energy</label>
+            <input type="text" name="co2avoid" value="0.857" id="co2avoid">
+        </div>
+
 
         <div class="inline-control submit-form col-1">
             <button id="submitBtn">Submit</button>
         </div>
     </form>
+
+    <div id="output"></div>
 
     <script src="js/script.js"></script>
 </body>
