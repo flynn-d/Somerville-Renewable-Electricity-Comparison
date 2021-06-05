@@ -11,13 +11,18 @@
     <form>
         <h2>Enter your information</h2>
 
-        <h3>Your energy consumption</h3>
+        <span class="field-tip">Your energy consumption
+          <span class="tip-content">Enter your typical monthy electricity usage here</span>
+        </span>
+
         <div class="row">
-            <label for="kwhslider">KwHs</label>
-            <input type="text" name="kwhslider" id="kwhslider">
+            <label for="kwhslider">kWhs</label>
+            <input type="text" name="kwhslider" value="450" id="kwhslider">
         </div>
-        
-        <h3>Electricity generation rates</h3>
+
+        <span class="field-tip" title="Test">Electricity generation rates
+          <span class="tip-content">These are the rates negotiated by the city, in $/kWh</span>
+        </span>
         <div class="row">
             <label for="rate10">Default +10% renewable</label>
             <input type="text" name="rate10" value="0.10519" id="rate10">
@@ -27,7 +32,9 @@
             <input type="text" name="rate100" value="0.13219" id="rate100">
         </div>
 
-        <h3>Electricity delivery rates</h3>
+        <span class="field-tip">Electricity delivery rates
+          <span class="tip-content">These are the values for a typical bill in Somerville, and are set by the utility, in $/month and $/kWh</span>
+        </span>
 
         <div class="row">
             <label for="custcharge">Customer account charge</label>
@@ -38,7 +45,9 @@
             <input type="text" name="deliverycharges" value="0.12818" id="deliverycharges">
         </div>
 
-        <h3>CO[2] avoided by choosing renewable energy</h3>
+        <span class="field-tip" title="Test">CO<sub>2</sub> avoided by choosing renewable energy
+          <span class="tip-content">This is the benefit of each additional kWh of renewable energy, in lbs CO<sub>2</sub> / kWh</span>
+        </span>
         <div class="row">
             <label for="co2avoid">Pounds of CO[2] avoided per kWh of renewable energy</label>
             <input type="text" name="co2avoid" value="0.857" id="co2avoid">
