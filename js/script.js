@@ -6,7 +6,7 @@
     function init() {
         window.Model = {};
         Model.output = function (d) {
-            var bill5 = d.custcharge + d.deliverycharges * d.kwhslider + d.rate5 * d.kwhslider;
+            var bill5 = d.custcharge + d.deliverycharges * d.kwhslider + d.rate10 * d.kwhslider;
             var bill100 = d.custcharge + d.deliverycharges * d.kwhslider + d.rate100 * d.kwhslider;
             var co2_5 = d.kwhslider * (RPS_YEAR + 5) / 100 * d.co2avoid;
             var co2_100 = d.kwhslider * d.co2avoid;
@@ -63,7 +63,7 @@
             document.querySelector('#error').innerHTML = "";
             document.querySelector('#success').innerHTML = "";
         };
-        
+
 
         VM.form.querySelector('button').addEventListener('click', function (ev) {
             ev.preventDefault();
@@ -71,7 +71,7 @@
 
             if (data) {
                 var d = Model.output(data);
-                document.querySelector('#success').innerHTML = "<br>bill5: " + d.bill5 + "<br>bill100: " + d.bill100 + "<br>co2_5: " + d.co2_5 + "<br>co2_100: " + d.co2_100;
+                document.querySelector('#success').innerHTML = "<br>bill5: " + Math.round(d.bill5 * 100) / 100 + "<br>bill100: " + Math.round(d.bill100 * 100) / 100 + "<br>co2_5: " + Math.round(d.co2_5 * 100) / 100 + "<br>co2_100: " + Math.round(d.co2_100 * 100) / 100;
             }
 
         });
