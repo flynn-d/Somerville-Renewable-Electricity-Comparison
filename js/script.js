@@ -74,6 +74,36 @@
                 document.querySelector('#success').innerHTML = "<br>bill5: " + Math.round(d.bill5 * 100) / 100 + "<br>bill100: " + Math.round(d.bill100 * 100) / 100 + "<br>co2_5: " + Math.round(d.co2_5 * 100) / 100 + "<br>co2_100: " + Math.round(d.co2_100 * 100) / 100;
             }
 
+            /* Start bar chart */
+            /* https://www.tutorialsteacher.com/d3js/create-bar-chart-using-d3js */
+            /* trying to start simpler with a table output */
+            /*
+            if (data) {
+              var d = Model.output(data);
+
+              var tr = d3.select("body")
+                    .append("table")
+                    .selectAll("tr")
+                    .data(d)
+                    .enter()
+                    .append("tr");
+
+              var td = tr.selectAll("td")
+              .data(function (d) ){
+                console.log(d);
+                return d;
+              })
+              .enter()
+              .append("td")
+              .text( function (d) ){
+                console.log(d);
+                return d;
+              });
+
+            }
+            */
+
+
         });
     }
 
